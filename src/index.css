@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply p-2 text-lg shadow-md bg-blue-300 rounded-xl border-2 border-blue-400 hover:bg-blue-400 hover:border-blue-500;
+  }
+  .sidebar {
+    @apply fixed top-0 left-0 w-1/4 h-full bg-slate-200 text-stone-700 lg:w-1/6;
+  }
+  .modal-overlay {
+    @apply fixed left-0 top-0 h-full w-full flex justify-center items-center -z-10 invisible;
+  }
+  .modal-show {
+    @apply visible z-10;
+  }
+}
